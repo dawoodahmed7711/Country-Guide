@@ -1,0 +1,402 @@
+/* =============================================
+   App.css — GeoScope Styles
+   ============================================= */
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BASE */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0d1b2a;
+  color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* =============================================
+   NAVBAR
+   ============================================= */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 40px;
+  border-bottom: 1px solid #1e2e3e;
+  background-color: #0d1b2a;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo span {
+  color: #4fc3f7;
+}
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+
+.nav-links a {
+  color: #cccccc;
+  font-size: 15px;
+}
+
+.nav-links a.active {
+  color: #ffffff;
+  border-bottom: 2px solid #4fc3f7;
+  padding-bottom: 2px;
+}
+
+.nav-icons {
+  display: flex;
+  gap: 16px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #cccccc;
+}
+
+/* =============================================
+   HERO
+   ============================================= */
+.hero {
+  text-align: center;
+  padding: 60px 20px 40px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.hero h1 .highlight {
+  color: #4fc3f7;
+}
+
+.hero p {
+  color: #a0aec0;
+  font-size: 16px;
+  max-width: 520px;
+  margin: 0 auto 32px;
+  line-height: 1.6;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #132030;
+  border: 1px solid #2a3f50;
+  border-radius: 50px;
+  padding: 14px 24px;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.search-bar input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #cccccc;
+  font-size: 15px;
+  width: 100%;
+}
+
+/* =============================================
+   MAIN SECTION (Featured + Right Column)
+   ============================================= */
+.main-section {
+  display: flex;
+  gap: 20px;
+  padding: 40px 40px 20px;
+  flex-wrap: wrap;
+}
+
+/* Featured Card */
+.featured-card {
+  background-color: #112233;
+  border-radius: 16px;
+  display: flex;
+  gap: 20px;
+  padding: 24px;
+  flex: 2;
+  min-width: 300px;
+  align-items: flex-start;
+}
+
+.featured-card img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  
+}
+
+.featured-info {
+  flex: 1;
+}
+
+.featured-label {
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: #4fc3f7;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.featured-info h2 {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.info-item label {
+  display: block;
+  font-size: 11px;
+  color: #6b7a8d;
+  margin-bottom: 4px;
+}
+
+.info-item span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.btn {
+  background-color: #4fc3f7;
+  color: #0d1b2a;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #81d4fa;
+}
+
+/* Right Column */
+.right-col {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex: 1;
+  min-width: 220px;
+}
+
+.side-card {
+  background-color: #112233;
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.side-card h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.stat-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #1e2e3e;
+  font-size: 14px;
+  color: #a0aec0;
+}
+
+.stat-row:last-child {
+  border-bottom: none;
+}
+
+.stat-value.blue  { font-weight: 700; color: #4fc3f7; }
+.stat-value.orange { font-weight: 700; color: #f6ad55; }
+
+.hub-text {
+  font-size: 13px;
+  color: #8a9ab0;
+  line-height: 1.5;
+  margin-top: 6px;
+}
+
+.avatar-row {
+  display: flex;
+  gap: 6px;
+  margin-top: 14px;
+  align-items: center;
+}
+
+.avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #2a3f50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.avatar.count {
+  background-color: #4fc3f7;
+  font-size: 11px;
+  font-weight: 700;
+  color: #0d1b2a;
+}
+
+/* =============================================
+   HOTSPOTS SECTION
+   ============================================= */
+.hotspots-section {
+  padding: 30px 40px 60px;
+}
+
+.hotspots-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 20px;
+}
+
+.hotspots-header h2 {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.hotspots-header p {
+  font-size: 13px;
+  color: #6b7a8d;
+}
+
+.hotspots-header a {
+  color: #4fc3f7;
+  font-size: 14px;
+}
+
+.hotspots-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.hotspot-card {
+  background-color: #112233;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.hotspot-card img {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+}
+
+.hotspot-body {
+  padding: 14px;
+}
+
+.hotspot-body h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.hotspot-body p {
+  font-size: 12px;
+  color: #6b7a8d;
+  margin-bottom: 14px;
+}
+
+.hotspot-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.status {
+  font-size: 13px;
+  font-weight: 600;
+  color: #4fc3f7;
+}
+
+/* =============================================
+   FOOTER
+   ============================================= */
+footer {
+  background-color: #0b1620;
+  border-top: 1px solid #1e2e3e;
+  padding: 24px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.footer-copy {
+  font-size: 12px;
+  color: #4a5568;
+  margin-top: 4px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-links a {
+  font-size: 13px;
+  color: #6b7a8d;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+}
+
+/* =============================================
+   RESPONSIVE
+   ============================================= */
+@media (max-width: 768px) {
+  .navbar        { padding: 14px 20px; }
+  .nav-links     { display: none; }
+  .hero h1       { font-size: 28px; }
+  .main-section  { flex-direction: column; padding: 20px; }
+  .featured-card { flex-direction: column; }
+  .featured-card img { width: 100%; height: 180px; }
+  .hotspots-grid { grid-template-columns: repeat(2, 1fr); }
+  .hotspots-section { padding: 20px 20px 40px; }
+}
+
+@media (max-width: 480px) {
+  .hotspots-grid { grid-template-columns: 1fr; }
+}
+.search {
+  background: transparent;
+  border: none;
+  color : white;
+  font-size: 17px;
+}
