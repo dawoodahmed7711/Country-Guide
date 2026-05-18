@@ -1,16 +1,32 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Country Guide 🌍
+A modern and responsive Country Guide web application built with React JS. This app allows users to search for any country and explore detailed information with a clean and beautiful UI.
+🚀 Features :-
+.Search countries instantly
+.View country details
+.Responsive mobile-friendly design
+.Modern UI with smooth layout
+.Dynamic country images
+.Real-time API data fetching
+📌 Country Information Included :-
+.Country Name
+.Capital
+.Population
+.Currency
+.Region / Continent
+.Languages
+.Timezone
+.Country Image
+🛠️ Built With :-
+.React JS
+.CSS / Tailwind CSS
+.REST Countries API
+.Pexels API
+📷 APIs Used :-
+.REST Countries API
+.Provides country information.
+.Bash
+.https://restcountries.com/
+.Pexels API
+.Provides beautiful country/travel images.
+Bash
+https://www.pexels.com/api/
